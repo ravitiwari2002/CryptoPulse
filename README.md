@@ -92,6 +92,11 @@ CryptoPulse is a cutting-edge cryptocurrency app that offers real-time market da
 ## Wireframes
 
 ![1](https://github.com/ravitiwari2002/CryptoPulse/assets/81186121/b237015a-9176-49b8-86a2-2f4c03cd4461)
+![2](https://github.com/ravitiwari2002/CryptoPulse/assets/81186121/8bcd3c1e-df62-4b15-ab0b-e467ad6d2a3d)
+![3](https://github.com/ravitiwari2002/CryptoPulse/assets/81186121/0a7916da-e01a-4f7b-8346-d533ed31d656)
+![4](https://github.com/ravitiwari2002/CryptoPulse/assets/81186121/632dfbfc-4644-4b30-8f08-fe48a69eb71b)
+![5](https://github.com/ravitiwari2002/CryptoPulse/assets/81186121/015914d9-21fc-4e4b-884e-e8fccee4ca5e)
+![6](https://github.com/ravitiwari2002/CryptoPulse/assets/81186121/544f2683-61aa-407a-ae6a-4750b756b085)
 
 
 ## Sprint Planning
