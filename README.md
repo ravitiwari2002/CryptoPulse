@@ -91,17 +91,8 @@ CryptoPulse is a cutting-edge cryptocurrency app that offers real-time market da
 
 ## Wireframes
 
-![1stimage](https://github.com/ravitiwari2002/CodePath-Capstone/assets/81186121/2620469f-e73b-4d26-a538-000c7681a85a)
+![1](https://github.com/ravitiwari2002/CryptoPulse/assets/81186121/b237015a-9176-49b8-86a2-2f4c03cd4461)
 
-![2ndimage](https://github.com/ravitiwari2002/CodePath-Capstone/assets/81186121/dfc7de2e-50a9-4f0e-af40-9c8ec2ae1dd4)
-
-![3rdimage](https://github.com/ravitiwari2002/CodePath-Capstone/assets/81186121/667385fb-94b0-452f-b884-4b5017b672a7)
-
-![4thimage](https://github.com/ravitiwari2002/CodePath-Capstone/assets/81186121/b2b6512d-8df5-4920-8f6a-c187345b02ea)
-
-![5thimage](https://github.com/ravitiwari2002/CodePath-Capstone/assets/81186121/a938c246-a680-4d6f-b03c-05abc3d9ff3d)
-
-![6thimage](https://github.com/ravitiwari2002/CodePath-Capstone/assets/81186121/a1c2b874-b208-40ea-aacd-ccaf40c9446f)
 
 ## Sprint Planning
 
