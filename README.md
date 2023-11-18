@@ -109,9 +109,9 @@ Sprint 1:
 - [✅] Filter data in search bar
   
 Sprint 2:
-- [] Create data model and display live market data
-- [] Create Portfolio View
-- [] Save current user's portfolio
+- [✅] Create data model and display live market data
+- [✅] Create Portfolio View
+- [✅] Save current user's portfolio
 
 Sprint 3:
 - [] Build an expandable and collapsable description section
