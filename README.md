@@ -119,6 +119,12 @@ Sprint 3:
 - [] App Icon, Launch Screen, and Launch Animation
 
 
+
+https://github.com/ravitiwari2002/CryptoPulse/assets/81186121/953942ed-fc00-4be7-bd0d-63ed3855bac5
+
+
+
+
 ## Schema 
 
 
