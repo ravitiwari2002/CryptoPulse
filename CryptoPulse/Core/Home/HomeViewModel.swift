@@ -76,6 +76,15 @@ class HomeViewModel: ObservableObject {
         HapticManager.notification(type: .success)
     }
     
+    func deletePortfolioCoins(at offsets: IndexSet) {
+            let coinsToDelete = offsets.map { portfolioCoins[$0] }
+            coinsToDelete.forEach { coin in
+                portfolioDataService.deleteCoinFromPortfolio(coin: coin)
+            }
+            reloadData()
+        }
+
+    
     private func filterAndSortCoins(text: String, coins: [CoinModel], sort: SortOption) -> [CoinModel] {
         var updatedCoins = filterCoins(text: text, coins: coins)
         sortCoins(sort: sort, coins: &updatedCoins)

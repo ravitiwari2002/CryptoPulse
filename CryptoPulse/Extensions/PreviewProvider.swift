@@ -21,7 +21,7 @@ class DeveloperPreview {
     private init() { }
     
     let homeVM = HomeViewModel()
-    
+
     let stat1 = MarketStatModel(title: "Market Cap", value: "$10.91Bn", percentageChange: 18.89)
 
     let stat2 = MarketStatModel(title: "Total Volume", value: "$2.3Tr")

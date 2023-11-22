@@ -43,9 +43,5 @@ struct CoinLogoView_Previews: PreviewProvider {
                 .preferredColorScheme(.dark)
             
         }
-        
-        
-        
     }
-    
 }

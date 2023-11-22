@@ -13,9 +13,12 @@ struct CryptoPulseApp: App {
     @StateObject private var vm = HomeViewModel()
     @State private var showLaunchView: Bool = true
     
-    init(){
+    init()
+    {
         UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor : UIColor(Color.theme.accent)]
         UINavigationBar.appearance().titleTextAttributes = [.foregroundColor : UIColor(Color.theme.accent)]
+        UINavigationBar.appearance().tintColor = UIColor(Color.theme.accent)
+        UITableView.appearance().backgroundColor = UIColor.clear
     }
     
     var body: some Scene {
@@ -25,6 +28,7 @@ struct CryptoPulseApp: App {
                     HomeView()
                         .navigationBarHidden(true)
                 }
+                .navigationViewStyle(StackNavigationViewStyle())
                 .environmentObject(vm)
                 ZStack{
                     if showLaunchView{

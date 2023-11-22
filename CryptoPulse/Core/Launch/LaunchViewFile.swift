@@ -9,7 +9,7 @@ import SwiftUI
 
 struct LaunchViewFile: View {
     
-    @State private var loadingText: [String] = "Loading your portfolio...".map { String($0) }
+    @State private var loadingText: [String] = "CRYPTO PULSE".map { String($0) }
     @State private var showLoadingText: Bool = false
     private let timer = Timer.publish(every: 0.1, on: .main, in: .common).autoconnect()
     
@@ -53,7 +53,7 @@ struct LaunchViewFile: View {
                 if counter == lastIndex {
                     counter = 0
                     loops += 1
-                    if loops >= 1 {
+                    if loops >= 2 {
                         showLaunchView = false
                     }
                 } else {

@@ -40,7 +40,7 @@ class PortfolioDataService {
             add(coin: coin, amount: amount)
         }
     }
-    
+
     // MARK: PRIVATE
     
     private func getPortfolio() {
@@ -51,6 +51,12 @@ class PortfolioDataService {
             print("Error fetching Portfolio Entities. \(error)")
         }
     }
+    
+    func deleteCoinFromPortfolio(coin: CoinModel) {
+            if let entity = savedEntities.first(where: { $0.coinID == coin.id }) {
+                delete(entity: entity)
+            }
+        }
     
     private func add(coin: CoinModel, amount: Double) {
         let entity = PortfolioEntity(context: container.viewContext)
@@ -68,7 +74,6 @@ class PortfolioDataService {
         container.viewContext.delete(entity)
         applyChanges()
     }
-    
     
     private func save() {
         do {

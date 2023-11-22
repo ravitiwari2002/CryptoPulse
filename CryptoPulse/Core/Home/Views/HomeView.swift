@@ -51,16 +51,16 @@ struct HomeView: View {
                 
                 Spacer(minLength: 0)
             }
-           /* .sheet(isPresented: $showSettingsView, content: {
+            .sheet(isPresented: $showSettingsView, content: {
                 SettingsView()
-            })*/
+            })
         }
-       /* .background(
+        .background(
             NavigationLink(
                 destination: DetailLoadingView(coin: $selectedCoin),
                 isActive: $showDetailView,
                 label: { EmptyView() })
-        )*/
+        )
     }
 }
 
@@ -132,12 +132,20 @@ extension HomeView {
                     }
                     .listRowBackground(Color.theme.background)
             }
+            .onDelete { indexSet in
+                deletePortfolioCoins(at: indexSet)
+            }
         }
         .listStyle(PlainListStyle())
     }
+
+    private func deletePortfolioCoins(at offsets: IndexSet) {
+        vm.deletePortfolioCoins(at: offsets)
+    }
+
     
     private var portfolioEmptyText: some View {
-        Text("You haven't added any coins to your portfolio yet. Click the + button to get started! 🧐")
+        Text("You haven't added any coins to your portfolio yet. Click the + button to get started!")
             .font(.callout)
             .foregroundColor(Color.theme.accent)
             .fontWeight(.medium)

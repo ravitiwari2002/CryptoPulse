@@ -38,7 +38,8 @@ class CoinImageAPI {
         guard let url = URL(string: coin.image) else { return }
         
         imageSubscription = Networking.download(url: url)
-            .tryMap { data in UIImage(data: data) }
+            .tryMap ({ data in UIImage(data: data) })
+            .receive(on: DispatchQueue.main)
             .sink(
                 receiveCompletion: { completion in
                     Networking.handleCompletion(completion: completion)

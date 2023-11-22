@@ -28,6 +28,10 @@ struct PortfolioView: View {
                     }
                 }
             }
+            .background(
+                Color.theme.background
+                    .ignoresSafeArea()
+            )
             .navigationTitle("Edit Portfolio")
             .navigationBarItems(leading:
                                     Button(action:{
@@ -62,18 +66,19 @@ extension PortfolioView{
     private var coinLogoList: some View{
         ScrollView(.horizontal, showsIndicators: false, content:{
             LazyHStack(spacing:10){
-                ForEach(vm.searchText.isEmpty ? (vm.portfolio.isEmpty ? vm.allCoins : vm.portfolio) : vm.allCoins){ coin in
-                    CoinLogoView(coin:coin)
+                
+                ForEach(vm.searchText.isEmpty ? (vm.portfolioCoins.isEmpty ? vm.allCoins : vm.portfolioCoins) : vm.allCoins) { coin in
+                    CoinLogoView(coin: coin)
                         .frame(width: 75)
                         .padding(4)
-                        .onTapGesture{
-                            withAnimation(.easeIn){
+                        .onTapGesture {
+                            withAnimation(.easeIn) {
                                 updateSelectedCoin(coin: coin)
                             }
                         }
                         .background(
-                        RoundedRectangle(cornerRadius: 10)
-                            .stroke(selectedCoin?.id == coin.id ? Color.theme.green : Color.clear, lineWidth:1)
+                            RoundedRectangle(cornerRadius: 10)
+                                .stroke(selectedCoin?.id == coin.id ? Color.theme.green : Color.clear, lineWidth: 1)
                         )
                 }
             }
