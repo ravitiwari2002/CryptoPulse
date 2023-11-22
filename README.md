@@ -6,9 +6,8 @@
 2. [Description](#Description)
 3. [App Evaluation](#App-Evaluation)
 4. [Product Spec](#Product-Spec)
-5. [User Stories](#User-Stories)
 6. [Screen Archetypes](#Screen-Archetypes)
-7. [Navigation](#Navigation)
+7. [Sprint Planning](#Sprint-Planning)
 
 ## Overview
 CryptoPulse is your ultimate cryptocurrency companion, providing real-time market data, detailed coin information, and powerful portfolio management tools in one seamless platform.
