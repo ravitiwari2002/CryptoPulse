@@ -108,3 +108,14 @@ Sprint 3:
 
 
 https://github.com/ravitiwari2002/CryptoPulse/assets/81186121/760d6988-560e-4b3e-8cc0-8731f03a7279
+
+## License
+
+    Copyright [2023] [Ravi Tiwari]
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
